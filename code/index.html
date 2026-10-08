@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My First Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>My First Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+<main class="content">
+  <section class="card-input">
+    <h2>Create a Flashcard</h2>
+    <form id="flashcard-form">
+      <label for="question">Question</label>
+      <textarea id="question" name="question" rows="3" required></textarea>
+
+      <label for="answer">Answer</label>
+      <textarea id="answer" name="answer" rows="3" required></textarea>
+
+      <button type="submit">Add Flashcard</button>
+    </form>
+  </section>
+
+  <section class="card-list">
+    <h2>Your Flashcards</h2>
+    <div id="flashcards"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Site</p>
+  </footer>
+</body>
+</html>
