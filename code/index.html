@@ -25,12 +25,39 @@
       <label for="answer">Answer</label>
       <textarea id="answer" name="answer" rows="3" required></textarea>
 
+      <label for="category">Category</label>
+            <input id="category" name="category" type="text" placeholder "e.g. Math, history" />
+
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty" name="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+
       <button type="submit">Add Flashcard</button>
     </form>
   </section>
 
   <section class="card-list">
     <h2>Your Flashcards</h2>
+    <section class="card-list">
+        <h2>Your Flashcards</h2>
+
+        <div class="filters">
+            <input id="filter-category" type="text" placeholder="Filter by category" />
+            <select id="filter-difficulty">
+                <option value="">All difficulties</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="clear-filters" type="button">Clear Filters</button>
+        </div>
+
+        <div id="flashcards"></div>
+    </section>
     <div id="flashcards"></div>
   </section>
 </main>
